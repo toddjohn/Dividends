@@ -1,0 +1,597 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6F0AEB0E21CAC7B0008C21C1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F0AEB0D21CAC7B0008C21C1 /* AppDelegate.swift */; };
+		6F0AEB1021CAC7B0008C21C1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F0AEB0F21CAC7B0008C21C1 /* ViewController.swift */; };
+		6F0AEB1321CAC7B0008C21C1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F0AEB1121CAC7B0008C21C1 /* Main.storyboard */; };
+		6F0AEB1521CAC7B1008C21C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F0AEB1421CAC7B1008C21C1 /* Assets.xcassets */; };
+		6F0AEB1821CAC7B1008C21C1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F0AEB1621CAC7B1008C21C1 /* LaunchScreen.storyboard */; };
+		6F0AEB2321CAC7B1008C21C1 /* DividendsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F0AEB2221CAC7B1008C21C1 /* DividendsTests.swift */; };
+		6F0AEB2E21CAC7B1008C21C1 /* DividendsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F0AEB2D21CAC7B1008C21C1 /* DividendsUITests.swift */; };
+		6F0AEB3C21CACAB7008C21C1 /* DividendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F0AEB3B21CACAB7008C21C1 /* DividendViewController.swift */; };
+		6F0AEB3E21CACE73008C21C1 /* DividendTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F0AEB3D21CACE73008C21C1 /* DividendTableViewCell.swift */; };
+		6F0AEB4021CADCD9008C21C1 /* RestClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F0AEB3F21CADCD9008C21C1 /* RestClient.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6F0AEB1F21CAC7B1008C21C1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6F0AEB0221CAC7B0008C21C1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6F0AEB0921CAC7B0008C21C1;
+			remoteInfo = Dividends;
+		};
+		6F0AEB2A21CAC7B1008C21C1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6F0AEB0221CAC7B0008C21C1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6F0AEB0921CAC7B0008C21C1;
+			remoteInfo = Dividends;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6F0AEB0A21CAC7B0008C21C1 /* Dividends.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dividends.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F0AEB0D21CAC7B0008C21C1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6F0AEB0F21CAC7B0008C21C1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6F0AEB1221CAC7B0008C21C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6F0AEB1421CAC7B1008C21C1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6F0AEB1721CAC7B1008C21C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6F0AEB1921CAC7B1008C21C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6F0AEB1E21CAC7B1008C21C1 /* DividendsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DividendsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F0AEB2221CAC7B1008C21C1 /* DividendsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DividendsTests.swift; sourceTree = "<group>"; };
+		6F0AEB2421CAC7B1008C21C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6F0AEB2921CAC7B1008C21C1 /* DividendsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DividendsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F0AEB2D21CAC7B1008C21C1 /* DividendsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DividendsUITests.swift; sourceTree = "<group>"; };
+		6F0AEB2F21CAC7B1008C21C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6F0AEB3B21CACAB7008C21C1 /* DividendViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DividendViewController.swift; sourceTree = "<group>"; };
+		6F0AEB3D21CACE73008C21C1 /* DividendTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DividendTableViewCell.swift; sourceTree = "<group>"; };
+		6F0AEB3F21CADCD9008C21C1 /* RestClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestClient.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6F0AEB0721CAC7B0008C21C1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6F0AEB1B21CAC7B1008C21C1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6F0AEB2621CAC7B1008C21C1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6F0AEB0121CAC7B0008C21C1 = {
+			isa = PBXGroup;
+			children = (
+				6F0AEB0C21CAC7B0008C21C1 /* Dividends */,
+				6F0AEB2121CAC7B1008C21C1 /* DividendsTests */,
+				6F0AEB2C21CAC7B1008C21C1 /* DividendsUITests */,
+				6F0AEB0B21CAC7B0008C21C1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6F0AEB0B21CAC7B0008C21C1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6F0AEB0A21CAC7B0008C21C1 /* Dividends.app */,
+				6F0AEB1E21CAC7B1008C21C1 /* DividendsTests.xctest */,
+				6F0AEB2921CAC7B1008C21C1 /* DividendsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6F0AEB0C21CAC7B0008C21C1 /* Dividends */ = {
+			isa = PBXGroup;
+			children = (
+				6F0AEB3F21CADCD9008C21C1 /* RestClient.swift */,
+				6F0AEB0D21CAC7B0008C21C1 /* AppDelegate.swift */,
+				6F0AEB0F21CAC7B0008C21C1 /* ViewController.swift */,
+				6F0AEB1121CAC7B0008C21C1 /* Main.storyboard */,
+				6F0AEB1421CAC7B1008C21C1 /* Assets.xcassets */,
+				6F0AEB1621CAC7B1008C21C1 /* LaunchScreen.storyboard */,
+				6F0AEB1921CAC7B1008C21C1 /* Info.plist */,
+				6F0AEB3B21CACAB7008C21C1 /* DividendViewController.swift */,
+				6F0AEB3D21CACE73008C21C1 /* DividendTableViewCell.swift */,
+			);
+			path = Dividends;
+			sourceTree = "<group>";
+		};
+		6F0AEB2121CAC7B1008C21C1 /* DividendsTests */ = {
+			isa = PBXGroup;
+			children = (
+				6F0AEB2221CAC7B1008C21C1 /* DividendsTests.swift */,
+				6F0AEB2421CAC7B1008C21C1 /* Info.plist */,
+			);
+			path = DividendsTests;
+			sourceTree = "<group>";
+		};
+		6F0AEB2C21CAC7B1008C21C1 /* DividendsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6F0AEB2D21CAC7B1008C21C1 /* DividendsUITests.swift */,
+				6F0AEB2F21CAC7B1008C21C1 /* Info.plist */,
+			);
+			path = DividendsUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6F0AEB0921CAC7B0008C21C1 /* Dividends */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6F0AEB3221CAC7B1008C21C1 /* Build configuration list for PBXNativeTarget "Dividends" */;
+			buildPhases = (
+				6F0AEB0621CAC7B0008C21C1 /* Sources */,
+				6F0AEB0721CAC7B0008C21C1 /* Frameworks */,
+				6F0AEB0821CAC7B0008C21C1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Dividends;
+			productName = Dividends;
+			productReference = 6F0AEB0A21CAC7B0008C21C1 /* Dividends.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6F0AEB1D21CAC7B1008C21C1 /* DividendsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6F0AEB3521CAC7B1008C21C1 /* Build configuration list for PBXNativeTarget "DividendsTests" */;
+			buildPhases = (
+				6F0AEB1A21CAC7B1008C21C1 /* Sources */,
+				6F0AEB1B21CAC7B1008C21C1 /* Frameworks */,
+				6F0AEB1C21CAC7B1008C21C1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6F0AEB2021CAC7B1008C21C1 /* PBXTargetDependency */,
+			);
+			name = DividendsTests;
+			productName = DividendsTests;
+			productReference = 6F0AEB1E21CAC7B1008C21C1 /* DividendsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6F0AEB2821CAC7B1008C21C1 /* DividendsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6F0AEB3821CAC7B1008C21C1 /* Build configuration list for PBXNativeTarget "DividendsUITests" */;
+			buildPhases = (
+				6F0AEB2521CAC7B1008C21C1 /* Sources */,
+				6F0AEB2621CAC7B1008C21C1 /* Frameworks */,
+				6F0AEB2721CAC7B1008C21C1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6F0AEB2B21CAC7B1008C21C1 /* PBXTargetDependency */,
+			);
+			name = DividendsUITests;
+			productName = DividendsUITests;
+			productReference = 6F0AEB2921CAC7B1008C21C1 /* DividendsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6F0AEB0221CAC7B0008C21C1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Todd Johnson";
+				TargetAttributes = {
+					6F0AEB0921CAC7B0008C21C1 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					6F0AEB1D21CAC7B1008C21C1 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 6F0AEB0921CAC7B0008C21C1;
+					};
+					6F0AEB2821CAC7B1008C21C1 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 6F0AEB0921CAC7B0008C21C1;
+					};
+				};
+			};
+			buildConfigurationList = 6F0AEB0521CAC7B0008C21C1 /* Build configuration list for PBXProject "Dividends" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6F0AEB0121CAC7B0008C21C1;
+			productRefGroup = 6F0AEB0B21CAC7B0008C21C1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6F0AEB0921CAC7B0008C21C1 /* Dividends */,
+				6F0AEB1D21CAC7B1008C21C1 /* DividendsTests */,
+				6F0AEB2821CAC7B1008C21C1 /* DividendsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6F0AEB0821CAC7B0008C21C1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F0AEB1821CAC7B1008C21C1 /* LaunchScreen.storyboard in Resources */,
+				6F0AEB1521CAC7B1008C21C1 /* Assets.xcassets in Resources */,
+				6F0AEB1321CAC7B0008C21C1 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6F0AEB1C21CAC7B1008C21C1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6F0AEB2721CAC7B1008C21C1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6F0AEB0621CAC7B0008C21C1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F0AEB3E21CACE73008C21C1 /* DividendTableViewCell.swift in Sources */,
+				6F0AEB1021CAC7B0008C21C1 /* ViewController.swift in Sources */,
+				6F0AEB3C21CACAB7008C21C1 /* DividendViewController.swift in Sources */,
+				6F0AEB4021CADCD9008C21C1 /* RestClient.swift in Sources */,
+				6F0AEB0E21CAC7B0008C21C1 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6F0AEB1A21CAC7B1008C21C1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F0AEB2321CAC7B1008C21C1 /* DividendsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6F0AEB2521CAC7B1008C21C1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F0AEB2E21CAC7B1008C21C1 /* DividendsUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6F0AEB2021CAC7B1008C21C1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6F0AEB0921CAC7B0008C21C1 /* Dividends */;
+			targetProxy = 6F0AEB1F21CAC7B1008C21C1 /* PBXContainerItemProxy */;
+		};
+		6F0AEB2B21CAC7B1008C21C1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6F0AEB0921CAC7B0008C21C1 /* Dividends */;
+			targetProxy = 6F0AEB2A21CAC7B1008C21C1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6F0AEB1121CAC7B0008C21C1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6F0AEB1221CAC7B0008C21C1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6F0AEB1621CAC7B1008C21C1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6F0AEB1721CAC7B1008C21C1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6F0AEB3021CAC7B1008C21C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6F0AEB3121CAC7B1008C21C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6F0AEB3321CAC7B1008C21C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Dividends/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.toddjohn.Dividends;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6F0AEB3421CAC7B1008C21C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Dividends/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.toddjohn.Dividends;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6F0AEB3621CAC7B1008C21C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DividendsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.toddjohn.DividendsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Dividends.app/Dividends";
+			};
+			name = Debug;
+		};
+		6F0AEB3721CAC7B1008C21C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DividendsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.toddjohn.DividendsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Dividends.app/Dividends";
+			};
+			name = Release;
+		};
+		6F0AEB3921CAC7B1008C21C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DividendsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.toddjohn.DividendsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Dividends;
+			};
+			name = Debug;
+		};
+		6F0AEB3A21CAC7B1008C21C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DividendsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.toddjohn.DividendsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Dividends;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6F0AEB0521CAC7B0008C21C1 /* Build configuration list for PBXProject "Dividends" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6F0AEB3021CAC7B1008C21C1 /* Debug */,
+				6F0AEB3121CAC7B1008C21C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6F0AEB3221CAC7B1008C21C1 /* Build configuration list for PBXNativeTarget "Dividends" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6F0AEB3321CAC7B1008C21C1 /* Debug */,
+				6F0AEB3421CAC7B1008C21C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6F0AEB3521CAC7B1008C21C1 /* Build configuration list for PBXNativeTarget "DividendsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6F0AEB3621CAC7B1008C21C1 /* Debug */,
+				6F0AEB3721CAC7B1008C21C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6F0AEB3821CAC7B1008C21C1 /* Build configuration list for PBXNativeTarget "DividendsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6F0AEB3921CAC7B1008C21C1 /* Debug */,
+				6F0AEB3A21CAC7B1008C21C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6F0AEB0221CAC7B0008C21C1 /* Project object */;
+}
