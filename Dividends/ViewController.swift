@@ -21,7 +21,7 @@ class ViewController: UITableViewController {
         portfolioSymbols.append(Fidelity401k)
         let IRA = ["AAPL", "AXS", "BDX", "CVX", "EMD", "GPC", "HSY", "IBM", "KMB", "KWEB", "MAIN", "MCD", "MSFT", "NMFC", "O", "OAK", "PSEC", "STAG", "SYY", "T", "TGT", "WRB"]
         portfolioSymbols.append(IRA)
-        let trading = ["ABT", "BX", "BXMT", "CTL", "EXG", "FAX", "IGD", "IIM", "LADR", "MO", "OHI", "VNOM"]
+        let trading = ["ABT", "BSM", "BX", "BXMT", "CTL", "EXG", "FAX", "IGD", "IIM", "LADR", "MO", "OHI", "VNOM"]
         portfolioSymbols.append(trading)
     }
 
