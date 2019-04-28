@@ -17,6 +17,8 @@
 		6F0AEB3C21CACAB7008C21C1 /* DividendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F0AEB3B21CACAB7008C21C1 /* DividendViewController.swift */; };
 		6F0AEB3E21CACE73008C21C1 /* DividendTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F0AEB3D21CACE73008C21C1 /* DividendTableViewCell.swift */; };
 		6F0AEB4021CADCD9008C21C1 /* RestClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F0AEB3F21CADCD9008C21C1 /* RestClient.swift */; };
+		9D1CD5FA227653E800C7F2DC /* DividendHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1CD5F9227653E800C7F2DC /* DividendHistoryViewController.swift */; };
+		9D1CD5FC2276579E00C7F2DC /* DividendHistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1CD5FB2276579E00C7F2DC /* DividendHistoryTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,8 @@
 		6F0AEB3B21CACAB7008C21C1 /* DividendViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DividendViewController.swift; sourceTree = "<group>"; };
 		6F0AEB3D21CACE73008C21C1 /* DividendTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DividendTableViewCell.swift; sourceTree = "<group>"; };
 		6F0AEB3F21CADCD9008C21C1 /* RestClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestClient.swift; sourceTree = "<group>"; };
+		9D1CD5F9227653E800C7F2DC /* DividendHistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DividendHistoryViewController.swift; sourceTree = "<group>"; };
+		9D1CD5FB2276579E00C7F2DC /* DividendHistoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DividendHistoryTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +116,8 @@
 				6F0AEB1921CAC7B1008C21C1 /* Info.plist */,
 				6F0AEB3B21CACAB7008C21C1 /* DividendViewController.swift */,
 				6F0AEB3D21CACE73008C21C1 /* DividendTableViewCell.swift */,
+				9D1CD5F9227653E800C7F2DC /* DividendHistoryViewController.swift */,
+				9D1CD5FB2276579E00C7F2DC /* DividendHistoryTableViewCell.swift */,
 			);
 			path = Dividends;
 			sourceTree = "<group>";
@@ -268,7 +274,9 @@
 				6F0AEB3E21CACE73008C21C1 /* DividendTableViewCell.swift in Sources */,
 				6F0AEB1021CAC7B0008C21C1 /* ViewController.swift in Sources */,
 				6F0AEB3C21CACAB7008C21C1 /* DividendViewController.swift in Sources */,
+				9D1CD5FC2276579E00C7F2DC /* DividendHistoryTableViewCell.swift in Sources */,
 				6F0AEB4021CADCD9008C21C1 /* RestClient.swift in Sources */,
+				9D1CD5FA227653E800C7F2DC /* DividendHistoryViewController.swift in Sources */,
 				6F0AEB0E21CAC7B0008C21C1 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
