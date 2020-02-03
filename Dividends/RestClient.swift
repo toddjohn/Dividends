@@ -129,7 +129,10 @@ open class RestClient {
         self.session = URLSession(configuration: config)
     }
 
-    fileprivate func sendRequest(_ request: NSMutableURLRequest, method: HttpMethod, success: @escaping (_ object: AnyObject?) -> (), failure: @escaping (_ error: NSError) -> ()) {
+    fileprivate func sendRequest(_ request: NSMutableURLRequest, method: HttpMethod,
+                                 success: @escaping (_ object: AnyObject?) -> (),
+                                 failure: @escaping (_ error: NSError) -> (),
+                                 successWithData: ((_ data: Data) -> ())? = nil) {
         request.httpMethod = method.rawValue
         var requestLogMessage = "Sending request: \(method.rawValue) \(request.url!.absoluteString)\nHeaders:\n"
         if let headers = request.allHTTPHeaderFields {
@@ -165,6 +168,7 @@ open class RestClient {
                 if 200...299 ~= response.statusCode {
                     print("request succeeded")
                     success(json as AnyObject?)
+                    successWithData?(data)
                 } else {
                     var serverInfo = "No details from server"
                     if let dict = json as? [String : AnyObject], dict["error_description"] != nil {
@@ -185,8 +189,6 @@ open class RestClient {
                 failure(responseError)
             }
         }).resume()
-        
-//        task.resume()
     }
 
     open func download(_ request: NSMutableURLRequest, progressUpdate: ((_ progress: Float) -> ())?, success: ((_ data: URL) -> ())?, failure: ((_ error: NSError) -> ())?) {
@@ -229,8 +231,11 @@ open class RestClient {
         self.sendRequest(request, method: .Delete, success: success, failure: failure)
     }
 
-    open func get(_ request: NSMutableURLRequest, success: @escaping (_ object: AnyObject?) -> (), failure: @escaping (_ error: NSError) -> ()) {
-        self.sendRequest(request, method: .Get, success: success, failure: failure)
+    open func get(_ request: NSMutableURLRequest,
+                  success: @escaping (_ object: AnyObject?) -> (),
+                  failure: @escaping (_ error: NSError) -> (),
+                  successWithData: ((_ data: Data) -> ())? = nil) {
+        self.sendRequest(request, method: .Get, success: success, failure: failure, successWithData: successWithData)
     }
 
     open func clientURLRequest(_ url: String, params: Dictionary<String, AnyObject>? = nil) -> NSMutableURLRequest {

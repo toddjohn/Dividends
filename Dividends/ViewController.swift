@@ -19,9 +19,11 @@ class ViewController: UITableViewController {
         self.navigationItem.title = "Portfolios"
         let Fidelity401k  = ["CHI", "ETJ", "JPS", "JRO"]
         portfolioSymbols.append(Fidelity401k)
-        let IRA = ["AAPL", "AXS", "BDX", "CVX", "EMD", "GPC", "HSY", "IBM", "KMB", "KWEB", "MAIN", "MCD", "MSFT", "NMFC", "O", "OAK", "PSEC", "STAG", "SYY", "T", "TGT", "WRB"]
+//        let IRA = ["AAPL", "AXS", "BDX", "CVX", "EMD", "GPC", "HSY", "IBM", "KMB", "KWEB", "MAIN", "MCD", "MSFT", "NMFC", "O", "OAK", "PSEC", "STAG", "SYY", "T", "TGT", "WRB"]
+        let IRA = ["EMD"]
         portfolioSymbols.append(IRA)
-        let trading = ["ABT", "BSM", "BX", "BXMT", "CTL", "EXG", "FAX", "IGD", "IIM", "LADR", "MO", "OHI", "VNOM"]
+//        let trading = ["ABT", "BSM", "BX", "BXMT", "CTL", "EXG", "FAX", "IGD", "IIM", "LADR", "MO", "OHI", "VNOM"]
+        let trading = ["EXG", "FAX", "IGD", "IIM"]
         portfolioSymbols.append(trading)
     }
 
